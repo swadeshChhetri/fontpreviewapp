@@ -54,7 +54,7 @@ export default function ShowFonts() {
               key={index}
               className={`p-3 gap-2 shadow-sm bg-white text-center`}
             >
-              <h3 className="font-semibold text-lg mb-2 items-center">{font.name}</h3>
+              <h3 className={`font-semibold text-lg mb-2 items-center ${font.class}`}>{font.name}</h3>
               <p 
               className={`p-3 flex item-center gap-2 border rounded-lg shadow-sm bg-white w-full text-center ${font.class}`}>
                 {text || "Preview Text"}
