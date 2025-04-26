@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Pacifico&family=Oswald&family=Poppins&family=Lato&family=Open+Sans&family=Montserrat&family=Playfair+Display&family=Merriweather&family=Dancing+Script&family=Lobster&family=Raleway&family=Rubik&family=Josefin+Sans&family=Bebas+Neue&family=Ubuntu&family=Bitter&family=Arvo&family=Fira+Sans&family=Inconsolata&family=Nunito&family=Quicksand&family=Zilla+Slab&family=PT+Serif&family=Varela+Round&display=swap');
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-pacifico: 'Pacifico', cursive;
+  --font-oswald: 'Oswald', sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-roboto);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
