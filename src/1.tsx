@@ -1,9 +1,9 @@
 'use client'
 import { useState } from "react";
 
-interface Font {
-  name: string;
-}
+// interface Font {
+//   name: string;
+// }
 
 export default function ShowFonts() {
   const [texts, setTexts] = useState<{ [key: number]: string }>({});
